@@ -22,8 +22,8 @@ RUN apt-get update
 RUN apt-get -y -q install java-package vim less procps unzip wget curl fakeroot libgl1-mesa-glx libgtk2.0-0 libxslt1.1 libxtst6 libxxf86vm1 && \
     useradd --home /home/fakeroot -m fakeroot && \
     cd ~fakeroot && \
-    wget -nv --no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u102-b14/jdk-8u102-linux-x64.tar.gz && \
-    su fakeroot -c "fakeroot yes|make-jpkg jdk-8u102-linux-x64.tar.gz" && \
+    wget -c --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u131-b11/d54c1d3a095b4ff2b6607d096fa80163/jdk-8u131-linux-x64.tar.gz && \
+    su fakeroot -c "fakeroot yes|make-jpkg jdk-8u131-linux-x64.tar.gz" && \
     rm jdk-*.tar.gz && \
     dpkg -i oracle-java*.deb && \
     apt-get -y -q --purge remove java-package fakeroot autopoint binutils bsdmainutils build-essential cpp debhelper dpkg-dev file g++ gcc make perl && \
