@@ -1,2 +1,2 @@
 # docker-debian-java
-Dockerfile for Debian + Oracle JDK
+Dockerfile for Debian + AdoptOpenJDK
