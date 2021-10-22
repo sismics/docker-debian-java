@@ -1,7 +1,7 @@
 #
 # Dockerfile for Debian + AdoptOpenJDK
 #
-FROM sismics/debian:9.0.0
+FROM sismics/debian:11.0.0
 MAINTAINER Jean-Marc Tremeaux <jm.tremeaux@sismics.com>
 
 # Run Debian in non interactive mode
